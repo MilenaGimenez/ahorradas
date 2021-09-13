@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="has-background-link-light">
+<html lang="es" class="has-background-primary-light">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,10 +35,11 @@
   <!--Link Icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-  <!-- Link tipografía -->
+  <!-- Link tipografy -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
    <!---Title-->
   <title>Ahorradas</title>
@@ -52,7 +53,7 @@
   <header>
     <nav class="navbar has-background-success is-spaced" role="navigation" aria-label="main navigationdivsection" class="navbar-brand">            
       <section class="navbar-brand">
-        <a class=" navbar-item is-hovered" href="#">
+        <a class="navbar-item">
           <h1 class="is-size-2 has-text-white titulo-principal">
             <i class="fas fa-hand-holding-usd"></i> Ahorradas</h1>
         </a>
@@ -67,15 +68,15 @@
       <!-------------------------------Nav visual-------------------------------------->
       <section id="navbar-menu" class="navbar-menu has-background-success">
         <article class="navbar-end">
-          <a class="navbar-item has-text-link-light navbar-item-hover-lik" id="btn-balance">
+          <a class="navbar-item has-text-link-light navbar-item-list" id="btn-balance">
             <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
             Balance
           </a>
-          <a class="navbar-item has-text-link-light" id="btn-categorias">
+          <a class="navbar-item has-text-link-light navbar-item-list" id="btn-categorias">
             <i class="fas fa-tag mr-2" aria-hidden="true"></i>
             Categorias
           </a>
-          <a class="navbar-item has-text-link-light" id="btn-reportes" onclick="generaReporte()">
+          <a class="navbar-item has-text-link-light navbar-item-list" id="btn-reportes" onclick="generaReporte()">
             <i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>
             Reportes
           </a>
@@ -209,7 +210,7 @@
               </article>
 
               <article class="column has-text-right-tablet">
-              <button class="button button is-link is-rounded" id="btn-nueva-operacion" aria-label="Botón para añadir una nueva operación">+ Nueva operación</button>
+              <button class="button button is-success is-rounded" id="btn-nueva-operacion" aria-label="Botón para añadir una nueva operación">+ Nueva operación</button>
               </article>
             </section>
 
@@ -295,7 +296,7 @@
               <a class="button is-light is-rounded" id="btn-cancelar" aria-label="Botón de cancelar añadir nueva operación">Cancelar</a>
             </p>
             <p class="control">
-              <a class="button is-link is-rounded" id="btn-agregar" aria-label="Botón de añadir nueva operación">Agregar</a>
+              <a class="button is-success is-rounded" id="btn-agregar" aria-label="Botón de añadir nueva operación">Agregar</a>
             </p>
           </article>
           
@@ -360,7 +361,7 @@
               <button class="button is-light is-rounded" id="btn-cancelar-editar" aria-label="Botón de cancelar editar nueva operación">Cancelar</button>
             </p>
             <p class="control">
-              <button class="button button is-link is-rounded" id="btn-editar-editar" aria-label="Botón de editar nueva operación">Editar</button>
+              <button class="button button is-success is-rounded" id="btn-editar-editar" aria-label="Botón de editar nueva operación">Editar</button>
 
             </p>
           </article>
@@ -388,7 +389,7 @@
               </article>
 
               <article class="control">
-                <button class="button button is-link is-rounded" id="agregar-categoria-boton" onclick="addCategories()" aria-label="Botón de agregar nueva categoría">
+                <button class="button button is-success is-rounded" id="agregar-categoria-boton" onclick="addCategories()" aria-label="Botón de agregar nueva categoría">
                   Agregar
                 </button>
               </article>
@@ -495,7 +496,7 @@
             <div class="field" id="sin-reportes">
               <div class="my-5 py-5">
               <figure class="image mt-5">
-                <img src="./img/reportes.svg" alt="Sin reportes">
+                <img src="./img/balance.svg" alt="Sin reportes">
               </figure>
               </div>
               <div class="column is-align-items-center">
